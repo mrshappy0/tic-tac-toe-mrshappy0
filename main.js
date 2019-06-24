@@ -35,66 +35,64 @@ for (const cell of cellArray) {
 	cell.addEventListener("click", () => {
 		if (turnCheck(statusArea.textContent) === true) {
 			blockEvent("X", cell, "O");
-			checkWin();
+			checkWin("X");
 		} else {
 			blockEvent("O", cell, "X");
-			checkWin();
+			checkWin("O");
 		}
 	});
 }
 
-function checkWin() {
+function checkWin(variable) {
 	if (
-		document.getElementById("cell-0").textContent === "X" &&
-		document.getElementById("cell-1").textContent === "X" &&
-		document.getElementById("cell-2").textContent === "X"
+		document.getElementById("cell-0").textContent === variable &&
+		document.getElementById("cell-1").textContent === variable &&
+		document.getElementById("cell-2").textContent === variable
 	) {
-		alert("Win");
+		alert("Player " + variable + " Wins");
 	} else if (
-		document.getElementById("cell-3").textContent === "X" &&
-		document.getElementById("cell-4").textContent === "X" &&
-		document.getElementById("cell-5").textContent === "X"
+		document.getElementById("cell-3").textContent === variable &&
+		document.getElementById("cell-4").textContent === variable &&
+		document.getElementById("cell-5").textContent === variable
 	) {
-		alert("Win");
+		alert("Player " + variable + " Wins");
 	} else if (
-		document.getElementById("cell-6").textContent === "X" &&
-		document.getElementById("cell-7").textContent === "X" &&
-		document.getElementById("cell-8").textContent === "X"
+		document.getElementById("cell-6").textContent === variable &&
+		document.getElementById("cell-7").textContent === variable &&
+		document.getElementById("cell-8").textContent === variable
 	) {
-		alert("Win");
+		alert("Player " + variable + " Wins");
 	} else if (
-		document.getElementById("cell-0").textContent === "O" &&
-		document.getElementById("cell-3").textContent === "O" &&
-		document.getElementById("cell-6").textContent === "O"
+		document.getElementById("cell-0").textContent === variable &&
+		document.getElementById("cell-3").textContent === variable &&
+		document.getElementById("cell-6").textContent === variable
 	) {
-		alert("Win");
+		alert("Player " + variable + " Wins");
 	} else if (
-		document.getElementById("cell-1").textContent === "O" &&
-		document.getElementById("cell-4").textContent === "O" &&
-		document.getElementById("cell-7").textContent === "O"
+		document.getElementById("cell-1").textContent === variable &&
+		document.getElementById("cell-4").textContent === variable &&
+		document.getElementById("cell-7").textContent === variable
 	) {
-		alert("Win");
+		alert("Player " + variable + " Wins");
 	} else if (
-		document.getElementById("cell-2").textContent === "O" &&
-		document.getElementById("cell-5").textContent === "O" &&
-		document.getElementById("cell-8").textContent === "O"
+		document.getElementById("cell-2").textContent === variable &&
+		document.getElementById("cell-5").textContent === variable &&
+		document.getElementById("cell-8").textContent === variable
 	) {
-		alert("Win");
+		alert("Player " + variable + " Wins");
 	} else if (
-		document.getElementById("cell-0").textContent === "O" &&
-		document.getElementById("cell-4").textContent === "O" &&
-		document.getElementById("cell-8").textContent === "O"
+		document.getElementById("cell-0").textContent === variable &&
+		document.getElementById("cell-4").textContent === variable &&
+		document.getElementById("cell-8").textContent === variable
 	) {
-		alert("Win");
+		alert("Player " + variable + " Wins");
 	} else if (
-		document.getElementById("cell-2").textContent === "O" &&
-		document.getElementById("cell-4").textContent === "O" &&
-		document.getElementById("cell-6").textContent === "O"
+		document.getElementById("cell-2").textContent === variable &&
+		document.getElementById("cell-4").textContent === variable &&
+		document.getElementById("cell-6").textContent === variable
 	) {
-	alert("Win");
+		alert("Player " + variable + " Wins");
 	}
 }
-
-
 
 
