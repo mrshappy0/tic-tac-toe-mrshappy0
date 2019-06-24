@@ -2,7 +2,7 @@ let numberCount = 0;
 function TurnCounter() {
 	let turnCountArea = document.getElementById("Turn Count");
 	numberCount++;
-	turnCountArea.textContent = "Turn Count: " + numberCount + ".";
+	turnCountArea.textContent = "Turn Count: " + numberCount;
 }
 
 let disableStartButton = document.getElementById("start");

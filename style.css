@@ -5,11 +5,13 @@ body {
   text-align: center;
   padding: 5px;
   user-select: none;
+  background-image: url(matrix.jpg);
+  background-size: contain;
 }
 
 h2 {
   font-family: fantasy;
-  color: black;
+  color: yellow;
   font-size: 40px;
   text-align: center;
   height: 15px;
@@ -23,7 +25,7 @@ span{
 div[id^="row-"] div {
   width: 200px;
   height: 150px;
-  border: 2px solid blueviolet;
+  border: 2px solid yellow;
   float: left;
 
 }
@@ -58,7 +60,15 @@ div.board {
 }
 
 div.cells {
-  color: blue;
+  color: yellow;
+  font-family: fantasy;
+  font-weight: lighter;
+  font-size:45pt;
+  line-height: 137px;
+}
+
+div.cells:hover {
+  background-color: blueviolet;
   font-family: fantasy;
   font-weight: lighter;
   font-size:45pt;
@@ -66,16 +76,30 @@ div.cells {
 }
 
 div[id = "status area"] {
-  color: black;
+  background-color: black;
+  color: yellow;
   font-family: fantasy;
   font-weight: lighter;
   font-size:25pt;
+  width: 608px;
+  margin: auto;
+  border-width:2px;
+  border-style:solid;
+  border-color:yellow;
+  border-bottom: none;
 }
 div [id = "Turn Count"] {
-  color: black;
+  background-color: black;
+  color: yellow;
   font-family: fantasy;
   font-weight: lighter;
   font-size:25pt;
+  width: 608px;
+  margin: auto;
+  border-width:2px;
+  border-style:solid;
+  border-color:yellow;
+  border-top: none;
 }
 
 .button {
@@ -91,4 +115,9 @@ div [id = "Turn Count"] {
 
 .button:disabled {
 background: grey;
+}
+
+.button:hover,
+.button:focus {
+  background: rgb(230, 181, 181)
 }
